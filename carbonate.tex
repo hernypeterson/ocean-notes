@@ -1,0 +1,76 @@
+\chapter{Inorganic Carbon Cycle}\label{carbonate}
+\section{Equilibria}
+The atmospheric concentration of carbon dioxide (\ce{pCO2}) is a primary factor influencing global climate today and through deep time. The oceanic inorganic carbon reservoir is over 50 times that of the atmosphere, so atmosphere-ocean exchange drives \ce{pCO2} over millennial timescales. The goal of this section is to derive a quantitative model which relates \ce{pCO2} to the measurable ocean carbonate system.
+
+When \ce{CO2} dissolves, it reacts with water to form carbonic acid (\ce{H2CO3^*})\footnote{It is difficult to distinguish between dissolved carbon dioxide and carbonic acid, so they are grouped as a single species}, bicarbonate (\ce{HCO3-}), and carbonate (\ce{CO3^2-}). These reactions are reversible, so the following equilibrium is established:
+\begin{multline}
+    \ce{CO2 (g) + H2O (l) <=>[K0] H2CO3^* (aq) \\ <=>[K1] H+ (aq) + HCO3- (aq) \\ <=>[K2] 2H+ (aq) + CO3^2- (aq)}\label{sys}
+\end{multline}
+\ce{K_{0,1,2}} are measurable concentration ratios of reactants by products at equilibrium:
+\begin{gather}
+    \ce{K0 = [H_2CO_3^{*}]/pCO_2}\label{K0}\\
+    \ce{K1 = [H^+][HCO_3^-]/[H_2CO_3^*]}\label{K1}\\
+    \ce{K2 = [H^+][CO_3^{2+}]/[HCO_3^-]}\label{K2}
+\end{gather}
+Dissolved Inorganic Carbon (DIC) and Alkanility (Alk) are also measurable:
+\begin{multline}
+    \ce{DIC = \underset{0.5\%}{[H_2CO_3^*]} + \underset{88.6\%}{[HCO_3^-]} + \underset{10.9\%}{[CO_3^{2-}]} \\ \approx [HCO3^-] + [CO3^2-]}\label{DICappx}
+\end{multline}
+Alk is the charge-balanced\footnote{Concentrations of species which exchange more than one proton are scaled accordingly.} excess of bases in solution, primarily carbonic conjugate bases:
+\begin{multline}
+     \ce{Alk = \underset{76.8\%}{[HCO_3^-]} + \underset{18.7\%}{2[CO_3^{2-}]} + \\ \underset{4.2\%}{[B(OH)_4^-]} + \underset{0.2\%}{(\Sigma[B] - \Sigma[A])} \\
+     \approx [HCO3^-] + 2[CO3^2-]\label{alkc}}
+\end{multline}
+\section{Derivation}
+Rearranging equilibrium constant expressions gives:
+\begin{gather}
+    \ce{[H+] = K2.[HCO3^-]/[CO3^2-]}\tag{\ref{K2}}\\
+    \ce{[H2CO3^*] = [H+][HCO3^-]/K1}\tag{\ref{K1}}\\
+    \ce{pCO2 = [H_2CO_3^{*}]/K_0}\tag{\ref{K0}}
+\end{gather}
+Sequential substitution and simplification gives:
+\begin{equation}
+    \ce{pCO2 = \frac{K2}{K0.K1}\cdot\frac{[HCO3^-]^2}{[CO3^{2-}]}}\label{CO2K}
+\end{equation}
+Subtracting~\eqref{alkc} from \eqref{DICappx} and substituting the result back into \eqref{DICappx} gives:
+\begin{gather}
+    \ce{[CO3^2-] \approx Alk - DIC}\\
+    \ce{[HCO3^2-] \approx $2$DIC - Alk}
+\end{gather}
+Finally, substituting back into~\eqref{CO2K} gives:
+\begin{equation}
+\ce{pCO2 \approx \dfrac{\ce{K2}}{\ce{K0\cdot K1}}\cdot \dfrac{(\ce{$2$DIC - Alk})^2}{\ce{Alk - DIC}}}
+\end{equation}
+\section{Calcium}
+The complexity of the carbonate system leads to some counter-intuitive dynamics. One of these is the observation that an increase in \ce{[H2CO3^*]} has the effect of \textit{lowering} \ce{[CO3^2-]}. To understand why, recall from \eqref{sys}:
+\[\ce{H2CO3}^{*}\ce{<=>[K1] H+(aq) + HCO3^-(aq)}\]
+By Le Chatelier's principle, increasing the concentration of the reactant \ce{H2CO3^*} will shift the reaction to the right, and thus more \ce{H+} and \ce{HCO3-} will be produced in equal measure, say by amount a. Next, consider how this increase affects the balance of the next equilibrium \eqref{sys}:
+\begin{equation}
+    \ce{HCO3-(aq) <=>[K2] H+(aq) + CO3^2-(aq)}
+\end{equation}
+Recall that the equilibrium concentrations of the products in this reaction are much lower than the product. Thus, the same increase + a to both sides will have a greater effect on the products, shifting the equation to the left (converting \ce{CO3^2-} to \ce{HCO3-}). With the addition of carbonic acid, carbonate alkalinity is consumed. Or, in terms of the equilibrium constant expression:
+\begin{equation}
+    \ce{K2 = \dfrac{[H^+][CO_3^{2+}]}{[HCO_3^-]}}\tag{\ref{K2}}
+\end{equation}
+Solving for \ce{[CO3^2-]}:
+\[\ce{[CO3^2-] \propto \dfrac{[HCO3-]}{[H+]}}\gg1\]
+Clearly, as a increases with the addition of \ce{H2CO3^*}, \ce{[CO3^2-]} will decrease.
+The concentration of carbonate is of key concern in another geochemical system, the biological calcium carbonate pump.
+
+Calcium carbonate forms two minerals, calcite and aragonite, which many ocean organisms use to build shells and exoskeletons.
+\[\ce{CaCO3(s) <=>[K_{sol}] Ca^2+(aq) + CO3^2-(aq)}\]
+\[\ce{K_{sol}=[Ca^2+][CO3^2-]}\]
+\ce{[Ca^2+]} = \qty{10}{\mmol\per\kg}
+\\\ce{[CO3^2-]} $\approx$ \qtyrange[range-units = single]{40}{200}{\umol\per\kg}
+\\~\\The saturation state of calcite or aragonite:
+\begin{equation}
+    \Omega = \ce{\dfrac{[CO_3^{2-}]_{meas.}}{[CO_3^{2-}]_{equil.}}}
+\end{equation}
+Rearranging equation 2.,
+\[\ce{HCO3-(aq) <=> H2CO3^* - H+(aq)}\]
+Adding equation 3.,
+\[\ce{2HCO3-(aq) <=> H2CO3^* - H+(aq) + H+(aq) + CO3^2-(aq)}\]
+\[\ce{2HCO3-(aq) <=> H2CO3^* + CO3^2-(aq)}\]
+Interacting with calcium,
+\[\ce{Ca^2+(aq) + 2HCO3-(aq) <=> H2O(l) + CO2(g) + CaCO3(s)}\]
+Thus, calcification consumes 2 units of DIC, releasing only 1 unit as a byproduct.

@@ -1,0 +1,46 @@
+\chapter{Redox}\label{redox}
+\section{Introduction}
+Chemical reactions that permanently transfer electrons between species are called ``Reduction–Oxidation" (Redox). For example:
+\[\ce{Cu^2+ (aq) + Zn (s) -> Cu (s) + Zn^2+}\]
+can be broken into ``half-reactions" involving either reduction:
+\[\ce{Cu^2+ (aq) + 2e- -> Cu (s)}\]
+or oxidation:
+\[\ce{Zn (s) -> Zn^2+ + 2e-}\]
+Notice that when the two half-reactions are added together, the 2 electrons appear on both sides and can thus are neither products not reactants of the overall reaction. Some redox reactions can be more difficult to identify, for example:
+\[\ce{CO2 (g) -> C_{\text{org.}} + O2 (g)}\]
+is a highly simplified expression for photosynthesis where \ce{C_{\text{org.}}} refers to organic carbon of oxidation state 0. In this case, carbon is reduced:
+\[\ce{C^4+ + 4e- -> C_{\text{org.}}}\]
+and oxygen is oxidized:\footnote{As you might guess from the name, oxygen is almost always the species doing the oxidizing. Redox chemistry is one of countless ways we can understand photosynthesis as a unique and crucial component of life on a habitable planet.}
+\[\ce{2O^2- -> O2 + 4e-}\]
+Again, adding the half-reactions allows electrons to cancel. \ce{C^4+} and \ce{2O^2-} are simply the components of \ce{CO2} considered individually.
+\section{Energy}
+Redox reactions involve energy because charged electrons have different electric potential energy depending on their position relative to charged atomic nuclei. This is analogous to massive objects having different gravitational potential energy depending on their position relative to other massive objects. In both cases, measuring absolute potential energy is not practical, so measurements are made relative to chosen references, such as sea level for $\text{PE}_g$, or for $\text{PE}_e$, the energy associated with the following reduction:
+\[\ce{2H+ (aq) + 2e- -> H2 (g)}\]
+\section{Environmental Parameter}
+Just as acid-base conditions can be characterized by the activity of protons:
+\[\ce{pH = -log(H+)}\]
+redox conditions can be characterized by the activity of electrons:
+\[\ce{pe = -log(e-)}\]
+To understand how this might be done, consider one half-reaction from the simplified photosynthesis system described above:
+\[\ce{C^4+ + 4e- -> C_{\text{org.}}}\]
+An equilibrium constant can be defined as follows:
+\[\ce{K = \frac{(C_{\text{org.}})}{(C^4+)(e^-)^4}}\]
+Rearranging gives:
+\[\ce{(e^-)} = \left[\ce{\frac{(C_{\text{org.}})}{K(C^4+)}}\right]^{1/4}\]
+Or in general:
+\[\ce{(e^-)} = \left[\ce{\frac{(R)}{K(O)}}\right]^{1/n}\]
+For the general reduction half-reaction:
+\[\ce{O + \textit{n}\,e^- -> R}\]
+Thus:
+\[\ce{pe} = \left[\frac{1}{n}\right]\left[\log \ce{K}-\log\frac{(R)}{(O)}\right]\]
+The most commonly used redox parameter is defined as follows:
+\[\ce{Eh = \frac{2.3RT\cdot pe}{F}}\]
+Where R is the constant \qty{8.314}{\joule\per\kelvin\per\mol}, T is temperature in \unit{\K}, and the Faraday constant F is the electric charge of a mole of electrons \qty{9.64853e4}{\coulomb\per\mol}. Further simplification shows Eh has units of \unit{\J\per\coulomb} (\unit{\volt}).
+\section{Iron Oxidation}
+To give an example of a redox reaction with significant real-world consequences, consider Iron, which originally appears at the surface mostly in its reduced \ce{Fe^{2+}} state in mafic minerals like olivine, pyroxenes, and amphiboles. As it weathers in an oxygenated atmosphere or ocean environment, the following reaction takes place.
+\begin{align*}
+    4[\ce{Fe^2+ &-> Fe^3+ + e-}]\\ + [\ce{O2 + 4e- &-> 2O^2-}]\\ = \ce{4Fe^2+ + O2 &-> 4Fe^3+ + 2O^2-}
+\end{align*}
+\ce{Fe^{3+}} is highly insoluble in water compared to \ce{Fe^{2+}}, so one consequence of this reaction is that oxidized iron quickly precipitates out of solution, usually before it has a chance to be carried by rivers into the ocean. Mature soils are often rich in oxidized iron, with reduced-iron minerals having long since degraded. Another consequence has to do with the specific minerals that are formed when \ce{Fe^{3+}} is produced, namely, hematite (\ce{Fe2O3}). From our redox reaction, we can see that oxidized iron and reduced oxygen (\ce{O^{2-}}; ``oxide'') are not produced in the correct ratio for hematite. Instead, we need four more oxygen atoms, supplied by water (\ce{OH-})
+\[\ce{4Fe^2+ + O2 + 4OH- -> 4Fe^3+ + 6O^2- + 4H+}\]
+Notice that alkalinity \ce{(4OH-)} is consumed, and acidity \ce{(4H+)} is produced. Thus, oxidation of iron is associated with the acidification of the surrounding environment. This can have dramatic consequences on local and global environments. For example, mining often exposes large outcrops of iron (some of which will be reduced, i.e., susceptible to oxidation) very rapidly, which can lead to acid-mine drainage. Alternatively, large increase in the amount of free oxygen in an environment already rich in \ce{Fe^{3+}} can have the same effect. This occured on a global scale, during the Great Oxygenation event (~2.5-2.0 Ga), which led to dramatic chemical transformations of the entire fluid earth.

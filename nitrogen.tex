@@ -1,0 +1,78 @@
+\chapter{Nitrogen}
+\section{Isotope Fractionation}
+\newcommand{\dN}{\delta\isotope[15]{N}}
+\newcommand{\eps}{\varepsilon}
+Nitrogen has two stable isotopes: \isotope[14]{N} and \isotope[15]{N}. Isotopes form the same compounds and participate in the same reactions; both are thus present in any nitrogenous sample. However, many reactions preferentially consume certain isotopes. For some reaction involving N, \ce{K_{14}} and \ce{K_{15}} represent the rate constants for the reactions involving only the respective isotope. The degree to which such a reaction distinguishes between isotopes is given by the isotopic fractionation factor $\alpha$:
+\begin{gather}
+    \alpha = \ce{K_{15}/K_{14}}\label{alpha}\\
+    \eps = \alpha - 1\label{epsilon}
+\end{gather}
+Most\footnote{The only significant biological reaction which does not fractionate N isotopes is Nitrification, the original source of fixed N forms to the ocean cycle} biological reactions preferentially consume lighter isotopes; thus $\alpha<1$ and $\eps$ is negative. For incomplete reactions,\footnote{Theoretically, all reactions are incomplete, as there is always some reverse reaction. For practical calculations, only systems with measurable pools of substrate and product are considered incomplete.} isotopes are partitioned into pools of substrate (reactant) and product, whose isotope ratios may differ. These variations provide information about the chemical circumstances in which a sample formed, and the degree of completion for the relevant reaction. If we let $R$ indicate the  isotope ratio \isotope[15]{N}/\isotope[14]{N} with atmospheric \ce{N2} serving as a reference:
+\begin{equation}
+    R_{atm} \approx.003663\label{R}
+\end{equation} then the geochemical tracer used to measure N isotope ratios is $\dN$:
+\begin{equation}
+   \dN=\frac{R}{R_{atm}}-1\label{d15N}
+\end{equation}
+$\delta\ce{^{15}N}$ and $\eps$ are expressed in parts per thousand (\unit{\permil}). 
+\section{Derivation}
+\begin{equation}
+    \alpha=\dfrac{R_{p(i)}}{R_s}=\frac{\left(\dfrac{d\ce{^{15}N_p}}{d\ce{^{14}N_p}}\right)}{\left(\ce{\dfrac{^{15}N_s}{^{14}N_s}}\right)}=\frac{d\ce{^{15}N_p}}{\ce{^{15}N_s}}\Big/\frac{d\ce{^{14}N_p}}{\ce{^{14}N_s}}\label{alpha/R}
+\end{equation}
+When $t=0;\ \ce{N_s = N_{s(0)}}$. Some steps involving integrating (?):
+\begin{equation}
+    \alpha \times \ln{\left(\frac{\ce{^{14}N_s}}{\ce{^{14}N_{s(0)}}}\right)}=\ln{\left(\frac{\ce{^{15}N_s}}{\ce{^{15}N_{s(0)}}}\right)}\label{integrated}
+\end{equation}
+\begin{equation}
+    f = \ce{\frac{N_s}{N_{s(0)}}}\label{f}
+\end{equation}
+Since \ce{^{14}N} predominates \eqref{R},
+\begin{equation}
+    f \approx \ce{\frac{^{14}N_s}{^{14}N_{s(0)}}}\label{f_approx}
+\end{equation}
+Substituting \eqref{f_approx} into \eqref{integrated}:
+\begin{align*}
+    \alpha \times \ln{f} &=\ln{\left(\frac{\ce{^{15}N_s}}{\ce{^{15}N_{s(0)}}}\right)}\\
+    &=\ln{\left(\frac{\ce{^{15}N_s}}{\ce{^{15}N_{s(0)}}}\times\frac{\ce{^{14}N_{s(0)}\times^{14}N_s}}{\ce{^{14}N_s\times^{14}N_{s(0)}}}\right)}\\
+    &=\ln{\left[\left(\ce{\frac{^{15}N_s}{^{14}N_s}}\Big/\ce{\frac{^{15}N_{s(0)}}{^{14}N_{s(0)}}}\right)\times\ce{\frac{^{14}N_s}{^{14}N_{s(0)}}}\right]}
+\end{align*}
+Substituting \eqref{R} and \eqref{f_approx}:
+\begin{equation}
+    \alpha \times \ln{f} = \ln{\left(\frac{R_s}{R_{s(0)}}\right)}+\ln{f}
+\end{equation}
+Rearranging and substituting from \eqref{epsilon}:
+\begin{gather}
+    \eps \times \ln{f} \approx \ln{\left(\frac{R_s}{R_{s(0)}}\right)}\label{epsilon*lnf}\\
+    \frac{R_s}{R_{s(0)}}=f^\eps
+\end{gather}
+From \eqref{d15N}:
+\begin{gather}
+1+\delta\ce{^{15}N}=\frac{R}{R_{atm.}}\nonumber\\
+R=R_{atm.}(1+\delta\ce{^{15}N})
+\end{gather}
+Substituting into \eqref{epsilon*lnf}:
+\begin{align}
+    \eps \times \ln{f} &\approx \ln{\left(\frac{R_{atm.}(1+\delta\ce{^{15}N}_s)}{R_{atm.}(1+\delta\ce{^{15}N}_{s(0)})}\right)}\nonumber\\
+    &\approx \ln{\left(\frac{1+\delta\ce{^{15}N}_s}{1+\delta\ce{^{15}N}_{s(0)}}\right)}\label{eps.delta15_ratio}
+\end{align}
+For small values of $u$ and $v$ \eqref{R}:
+\[\ln{\left(\frac{1+u}{1+v}\right)}\approx u-v\]
+Thus, from \eqref{eps.delta15_ratio}:
+\begin{gather}
+    \eps \times \ln{f} \approx \delta\ce{^{15}N}_s - \delta\ce{^{15}N}_{s(0)}\nonumber\\
+    \eps \approx \frac{\delta\ce{^{15}N}_s - \delta\ce{^{15}N}_{s(0)}}{\ln{f}}
+\end{gather}
+\section{Fractionation of Pools}
+During a typical biological reaction\footnote{For example: \ce{NO3- ->[k] N_{org}}} which preferentially consumes \ce{^{14}N}, nitrogen is partitioned into substrate (s) and product (p) pools. 
+Finally:
+\begin{equation}
+    \alpha = \dfrac{d\ce{^{15}N_p}}{\ce{^{15}N_p}}\Big/\dfrac{d\ce{^{15}N_p}}{\ce{^{14}N_s}}
+\end{equation}
+During a reaction which fractionates nitrogen isotopes,  $\delta\ce{^{15}N}$ values of each for the two ``pools,'' i.e., the growing product pool and the dwindling substrate pool, will deviate from the initial substrate value ($\delta\ce{^{15}N_{s(0)}}$) as a function of $\eps$ and $f$, the fraction of substrate remaining compared to the initial value:
+\begin{align}
+    \delta\ce{^{15}N_s}&=\delta\ce{^{15}N_{s(0)}}-\eps\ln{f}\label{d15ns}\\
+    \delta\ce{^{15}N_p}&=\delta\ce{^{15}N_{s(0)}}+\eps\Big(\frac{f\ln{f}}{1-f}\Big)\label{d15np}
+\end{align}
+Since $\eps$ is negative, $\delta\ce{^{15}N}$ will be lower in the product pool (organic nitrogen) and higher in the substrate pool (dissolved \ce{NO3-}), but not by the same amount.
+\section{Motivation}
+Atlantic Ocean overturning has significantly slowed during the 20th century, evidenced by the observation that the site of NADW formation is the only region of the Earth that is currently cooling.

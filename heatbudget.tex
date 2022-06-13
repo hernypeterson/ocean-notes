@@ -1,0 +1,42 @@
+\chapter{The Planetary Heat Budget}
+The transmission of heat through Earth's surface environments is governed to a first order by the Stefan-Boltzmann law, which relates radiant exitance $M$ to surface temperature $T$:
+\begin{equation}
+M=\sigma T^4
+\end{equation}
+$\sigma$ is a constant \qty{5.67e-8}{\watt\per\square\meter\per\K\tothe{4}}, thus $M$ is a measure of emitted power per area (\unit{\watt\per\meter\squared}). Radiant flux $\Phi$ is the product of $M$ and surface area, which can be calculated for a sphere by its radius. For the sun, the original heat source for fluid Earth dynamics, we have $T_\odot=\qty{5772}{\K}$ and $R_\odot=\qty{6.957e8}{\m}$:
+\begin{equation}
+\Phi_\odot=\sigma T_\odot^4\cdot4\pi R^2_\odot
+\approx\qty{3.83e26}{\W}
+\end{equation}
+We assume this power radiates uniformly in all directions from the sun, such that intensity $I$ (incoming \unit{\W\per\meter}) follows the inverse-square law:
+\begin{equation}
+I=\frac{\Phi_\odot}{4\pi r^{2}}
+\end{equation}
+where $r$ is the distance from the sun. For Earth's orbital distance $r_E\approx\qty{1.496e11}{\meter}$:
+\begin{equation}
+I\approx\frac{\qty{3.83e26}{\W}}{4\pi\cdot(\qty{1.496e11}{\m})^2}\approx\qty{1361}{\W\per\square\meter}
+\end{equation}
+This value is known as the solar constant $G_{SC}$. Earth's total radiant influx $\Phi_{E(\text{in})}$ is the product of $G_{SC}$ and the area of the circular projection with radius $R_E=\qty{6.371e6}{\m}$:
+\begin{multline}
+\Phi_{E(\text{in})}=\qty{1361}{\W\per\square\meter}\cdot\pi(\qty{6.371e6}{\m})^2\\
+\approx\qty{1.736e17}{\W}
+\end{multline}
+This value is calculated for an area $\pi R_E^2$, but we would like to know how $\Phi_{E(\text{in})}$ is actually distributed over Earth's surface area of $4\pi R_E^2$ at any given moment or averaged over long timescales. Of course we can say at any moment, the daylight hemisphere receives the entire $\Phi_{E(\text{in})}$; the nighttime hemisphere receives none. But this still leaves a curved surface area twice as large as the flat projection:
+
+\begin{figure}
+\begin{center}
+    \begin{tikzpicture}
+    \shade[left color=white,right color=yellow] (0,0) rectangle +(5,\er);
+    \fill (0,.5*\er) circle (.5*\er);
+   	\foreach \x in {0,.5,...,\er}
+		\draw[thin, dotted] (0,\x) -- +(\er,0);
+	\shade[left color=black,right color=white] (0,0) arc (-90:90:.5*\er);
+	\draw[thin, dotted,white] (0,0) -- node[right]{T} +(0,\er);
+	\draw [decorate,decoration={brace,mirror}] (\er,0) -- +(0,.5) node [black,midway,xshift=.4cm] {$d\Phi$};
+    \end{tikzpicture}
+	\caption{The terminator T divides }
+	\label{insol}
+  	\end{center}
+	\end{figure}
+
+We have seen a permanent heat surplus at low latitudes and a corresponding heat deficit near the poles. So in addition to re-radiating incoming solar energy \emph{vertically} back to space, there must also be \emph{horizontal} heat transfer from low to high latitudes. This is achieved by convection of Earth's ocean and atmosphere.
