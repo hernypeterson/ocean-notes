@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.12)  19 JUN 2022 13:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.12)  19 JUN 2022 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -848,49 +848,49 @@ Package hyperref Info: Link coloring ON on input line 47.
 \openout4 = `OceanNotes.out'.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 51.
+(Font)              scaled to size 17.28pt on input line 49.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 51.
-LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 51.
+(Font)              scaled to size 12.0pt on input line 49.
+LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 49.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.fd
 File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 51.
+(Font)              scaled to size 12.0pt on input line 49.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 51.
+(Font)              scaled to size 8.8pt on input line 49.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 51.
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 51.
+(Font)              scaled to size 6.6pt on input line 49.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 49.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 51.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 49.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 51.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 49.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 51.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 49.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./acidbase.tex
-Chapter 1.
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 1.
+(Font)              scaled to size 24.88pt on input line 49.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 1.
+(Font)              scaled to size 24.88pt on input line 49.
+ (./OceanNotes.toc
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 24.88pt on input line 1.
+(Font)              scaled to size 10.0pt on input line 1.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 2.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
@@ -898,48 +898,166 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 2.
 
+
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 2.
 
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 2.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 2.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 4.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 14.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 14.
 )
+\tf@toc=\write5
+\openout5 = `OceanNotes.toc'.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 \end{document}
-                    [1
+l.49 \tableofcontents
+                      [1
 
 
-] (./OceanNotes.aux)
+
+] (./coriolis.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 20.74pt on input line 1.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 20.74pt on input line 1.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 6.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 6.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 6.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.2pt on input line 6.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.2pt on input line 6.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 11.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 11.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 33.
+[2
+
+
+] [3]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 111.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.5pt on input line 111.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.9pt on input line 111.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\varphi' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 111.
+
+[4]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 238.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\kappa' on input line 238.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 238.
+
+[5]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 265.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 265.
+) (./acidbase.tex [6]
+Chapter 2.
+) (./carbonate.tex [7
+
+]
+Chapter 3.
+[8
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 64.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 64.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+ []
+
+
+Overfull \hbox (7.32245pt too wide) detected at line 72
+[][]\OT1/LinuxLibertineT-TLF/m/n/10 2 [][][][][][][][][][][] [] [][][]H[][][][][][][] [] []H[][][][][][][][] \LMS/ntxsy/m/n/10 Ï [][]\OT1/LinuxLibertineT-TLF/m/n/10 H[][][][][][][][] \LMS/ntxsy/m/n/10 Ï [][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (4.62617pt too wide) detected at line 75
+[][][][][][][][][][] \LMS/ntxsy/m/n/10 Ï [][][]\OT1/LinuxLibertineT-TLF/m/n/10 2 [][][][][][][][][][][] [] [][][]H[][]O [][][]l[][] \LMS/ntxsy/m/n/10 Ï [][][][][][][][]\OT1/LinuxLibertineT-TLF/m/n/10 g[][] \LMS/ntxsy/m/n/10 Ï [][][][][][][][]\OT1/LinuxLibertineT-TLF/m/n/10 s[]
+ []
+
+) (./nitrogen.tex [9
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {Nitrogen}]
+Chapter 4.
+
+Underfull \vbox (badness 1472) has occurred while \output is active []
+
+
+Underfull \vbox (badness 2744) has occurred while \output is active []
+
+ [10
+
+]) (./redox.tex [11]
+Chapter 5.
+[12
+
+]) [13] (./OceanNotes.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.97499pt have occurred.
+(Font)              up to 3.33624pt have occurred.
 
 Package rerunfilecheck Info: File `OceanNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 7E456AF772CF97956D93AE54246A4075;420.
+(rerunfilecheck)             Checksum: D448AFBCF876DD406F4638EB26BEC6DA;3144.
  ) 
 Here is how much of TeX's memory you used:
- 34216 strings out of 478040
- 697403 string characters out of 5839121
- 968353 words of memory out of 5000000
- 51925 multiletter control sequences out of 15000+600000
- 601629 words of font info for 241 fonts, out of 8000000 for 9000
+ 35239 strings out of 478040
+ 719510 string characters out of 5839121
+ 985353 words of memory out of 5000000
+ 52495 multiletter control sequences out of 15000+600000
+ 743896 words of font info for 552 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,21n,103p,1058b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on OceanNotes.pdf (2 pages, 251291 bytes).
+ 99i,24n,103p,1058b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/LibertineMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on OceanNotes.pdf (14 pages, 353369 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 69669 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 419 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 139485 words of extra memory for PDF output out of 154059 (max. 10000000)
 
