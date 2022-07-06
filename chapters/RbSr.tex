@@ -1,0 +1,50 @@
+\documentclass[12pt,addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{microtype}
+\usepackage{libertine}
+\usepackage{parskip}
+\usepackage[libertine]{newtxmath}
+\usepackage{isotope}
+\bonuspointpoints{bonus point}{bonus points}
+\usepackage{mhchem}
+\title{Rb/Sr Dating}
+\author{GEOL 189C}
+\begin{document}
+\maketitle
+\isotope[87]{Rb} decays to \isotope[87]{Sr} with decay constant $\lambda=\qty{1.393e-11}{y^{-1}}$. So the amount of \isotope[87]{Rb} remaining at time $t$ is related to the initial amount $\left(\isotope[87]{Rb}_0\right)$ as follows:
+\begin{equation}
+    \isotope[87]{Rb}(t)=\isotope[87]{Rb}_0\cdot e^{-\lambda t}\label{decay}
+\end{equation}
+\isotope[87]{Sr} accumulates at the same rate that \isotope[87]{Rb} decays, so the accumulated amount of \isotope[87]{Sr} is the amount of decayed \isotope[87]{Rb}, the difference $\isotope[87]{Rb}_0-\isotope[87]{Rb}(t)$. Including initial $\isotope[87]{Sr}_0$:
+\begin{equation}
+    \isotope[87]{Sr}(t)=\isotope[87]{Sr}_0+\isotope[87]{Rb}_0-\isotope[87]{Rb}(t)
+\end{equation}
+\isotope[86]{Sr} is a stable, non-radiogenic isotope used to normalize each measurement. For example:
+\begin{equation*}
+    \frac{\isotope[87]{Rb}}{\isotope[86]{Sr}}(t)=\frac{\isotope[87]{Rb}_0}{\isotope[86]{Sr}}\cdot e^{-\lambda t}\tag{\ref{decay}}
+\end{equation*}
+
+\hrule
+
+The following data were sampled from a single outcrop which we assume formed simultaneously:
+\begin{center}
+    \begin{tabular}{ccc}
+    \isotope[87]{Rb}/\isotope[86]{Sr} & \isotope[87]{Sr}/\isotope[86]{Sr}\\
+    \hline
+    3.01 & 0.70995\\
+    2.00 & 0.7082\\
+    2.63 & 0.7092\\
+    1.92 & 0.70775
+\end{tabular}
+\end{center}
+\begin{questions}
+    \question[2] How should each ratio to change over time, especially \emph{relative to one another?}
+    \question[2] How could you determine the initial ratios of each sample?
+    \question[2] How could you determine the time elapsed since this initial state?
+    \question[2] What is your best estimate for the age of the outcrop?
+    \question[2] What conditions must be true for your interpretation to be valid?
+\end{questions}
+\end{document}
