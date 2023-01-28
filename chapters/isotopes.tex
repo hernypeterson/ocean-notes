@@ -1,0 +1,106 @@
+\chapter{Isotopes}
+The term \emph{isotope fractionation} refers to two distinct but related concepts. 
+
+The first is a common observation that the isotopic composition of certain chemical elements varies across different \emph{reservoirs}. These reservoirs are typically defined by distinct \emph{bonding environments} for the element of interest. For example, the bonding environment of carbon locked in a carbonate mineral is very different than that of the carbon in a methane gas bubble.
+
+The second is the theoretical framework which best explains this observation. The crux of this theory is that \emph{the rate at which a reaction occurs varies by isotope of the elements involved.}
+
+So we begin by establishing some definitions related to isotopes and chemical kinetics.
+
+\section{Chemical Kinetics}
+Chemical kinetics is concerned with the rate at which reactions take place. We start with a simplified \emph{denitrification} reaction:
+\[\ce{2NO3- -> N2}\]
+We will only examine nitrogen, so the oxygen imbalance is not important here, and we will start by assuming all nitrogen is the single isotope \isotope[14]{N}. This reaction is one of many biological reactions which are ``pushed forward'' enzymatically, meaning they do not eventually settle into an equilibrium (shown with forward and reverse arrows)
+\[\ce{2NO3- <-> N2}\]
+Consider the evolution two reservoirs representing the reactants and products, respectively. At $t=0$, the reactant (substrate) pool $s$ is full, and the product pool $p$ is empty. What happens immediately after the reaction begins? Some small quantity of nitrogen is reacted, thus removing it from $s$ and placing it in $p$. The symbol $\Delta\ce{N}$ would be used for any specific amount of nitrogen we could experimentally measure. In theory, we are not interested in any particular finite $\Delta\ce{N}$, but rather the \emph{limiting} case in which the size of $\Delta\ce{N}$ approaches 0. The use of the term $d\ce{N}$ is a nod toward this abstraction which is unrealistic but will simplify the following derivations. In particular, we are be interested in the rate at which each reservoir evolves over time. To measure a rate, we need to measure the change in our reservoir before and after some finite time-step---but again, we are not interested in any specific time step $\Delta t$, but rather the limiting case $dt$ where this interval becomes arbitrarily small. The ratio of these terms:
+\[\frac{d\ce{N}}{dt}\]
+is known as the \emph{derivative} of N with respect to $t$; it indicates the best approximation for how N changes over very small $t$ intervals. A few facts should follow logically from this formulation. First, in a closed system of only two reservoirs, any N which is lost from one pool must be gained by the other; in other words, the rates at which the size of each pool changes over time must be equal and opposite. This is expressed as follows:
+\[\frac{d\ce{N_s}}{dt}=-\frac{d\ce{N_p}}{dt}\]
+
+\section{Isotope Definitions}
+Nearly all measurements and expressions in isotope geochemistry depend fundamentally on the isotope ratio $R$ in a particular sample, system, or reservoir of interest. It is simply the molar (or atomic) ratio of the heavy isotope to the light one, for example:
+\[R=\isotope[15]{N}/\isotope[14]{N}\]
+Since these ratios are often very small and their \emph{absolute} values are difficult to interptet, the \textdelta\ notation is used to compare some sample of interest to a standard, for example:
+\[\text{\textdelta}\isotope[15]{N}=(R/R_\text{atm.}-1)\cdot1000 \text{\textperthousand}\]
+
+\section{Derivation}
+We start with a concept closely related to the time derivative introduced previously. Here we are interested in the ratio $R$ of an \emph{incremental} product---the arbitrarily small bit of N which is added to the product pool over some very small time interval $dt$. We will use the term $R_{pi}$ for this measurement. Notice that this ratio is distinct from (indeed, totally unaffected by) $R_p$, the composition of the pool to which it is added.
+\begin{equation}
+    \alpha=\ce{K_{15}/K_{14}}=\dfrac{R_{pi}}{R_s}=\frac{\left(\dfrac{d\ce{^{15}N_p}}{d\ce{^{14}N_p}}\right)}{\left(\ce{\dfrac{^{15}N_s}{^{14}N_s}}\right)}=\frac{d\ce{^{15}N_p}}{\ce{^{15}N_s}}\Big/\frac{d\ce{^{14}N_p}}{\ce{^{14}N_s}}\label{alpha/R}
+\end{equation}
+When $t=0;\ \ce{N_s = N_{s(0)}}$. Some steps involving integrating (?):
+\begin{equation}
+    \alpha \times \ln{\left(\frac{\ce{^{14}N_s}}{\ce{^{14}N_{s(0)}}}\right)}=\ln{\left(\frac{\ce{^{15}N_s}}{\ce{^{15}N_{s(0)}}}\right)}\label{integrated}
+\end{equation}
+\begin{equation}
+    f = \ce{\frac{N_s}{N_{s(0)}}}\label{f}
+\end{equation}
+Since \ce{^{14}N} predominates \eqref{R},
+\begin{equation}
+    f \approx \ce{\frac{^{14}N_s}{^{14}N_{s(0)}}}\label{f_approx}
+\end{equation}
+Substituting \eqref{f_approx} into \eqref{integrated}:
+\begin{align*}
+    \alpha \times \ln{f} &=\ln{\left(\frac{\ce{^{15}N_s}}{\ce{^{15}N_{s(0)}}}\right)}\\
+    &=\ln{\left(\frac{\ce{^{15}N_s}}{\ce{^{15}N_{s(0)}}}\times\frac{\ce{^{14}N_{s(0)}\times^{14}N_s}}{\ce{^{14}N_s\times^{14}N_{s(0)}}}\right)}\\
+    &=\ln{\left[\left(\ce{\frac{^{15}N_s}{^{14}N_s}}\Big/\ce{\frac{^{15}N_{s(0)}}{^{14}N_{s(0)}}}\right)\times\ce{\frac{^{14}N_s}{^{14}N_{s(0)}}}\right]}
+\end{align*}
+Substituting \eqref{R} and \eqref{f_approx}:
+\begin{equation}
+    \alpha \times \ln{f} = \ln{\left(\frac{R_s}{R_{s(0)}}\right)}+\ln{f}
+\end{equation}
+Rearranging and substituting from \eqref{epsilon}:
+\begin{gather}
+    \varepsilon \times \ln{f} \approx \ln{\left(\frac{R_s}{R_{s(0)}}\right)}\label{epsilon*lnf}\\
+    \frac{R_s}{R_{s(0)}}=f^\varepsilon
+\end{gather}
+From \eqref{d15N}:
+\begin{gather}
+1+\delta\ce{^{15}N}=\frac{R}{R_{atm.}}\nonumber\\
+R=R_{atm.}(1+\delta\ce{^{15}N})
+\end{gather}
+Substituting into \eqref{epsilon*lnf}:
+\begin{align}
+    \varepsilon \times \ln{f} &\approx \ln{\left(\frac{R_{atm.}(1+\delta\ce{^{15}N}_s)}{R_{atm.}(1+\delta\ce{^{15}N}_{s(0)})}\right)}\nonumber\\
+    &\approx \ln{\left(\frac{1+\delta\ce{^{15}N}_s}{1+\delta\ce{^{15}N}_{s(0)}}\right)}\label{eps.delta15_ratio}
+\end{align}
+For small values of $u$ and $v$ \eqref{R}:
+\[\ln{\left(\frac{1+u}{1+v}\right)}\approx u-v\]
+Thus, from \eqref{eps.delta15_ratio}:
+\begin{gather}
+    \varepsilon \times \ln{f} \approx \delta\ce{^{15}N}_s - \delta\ce{^{15}N}_{s(0)}\nonumber\\
+    \varepsilon \approx \frac{\delta\ce{^{15}N}_s - \delta\ce{^{15}N}_{s(0)}}{\ln{f}}
+\end{gather}
+
+\section{Fractionation of Pools}
+During a typical biological reaction\footnote{For example: \ce{NO3- ->[k] N_{org}}} which preferentially consumes \ce{^{14}N}, nitrogen is partitioned into substrate (s) and product (p) pools. 
+Finally:
+\begin{equation}
+    \alpha = \dfrac{d\ce{^{15}N_p}}{\ce{^{15}N_p}}\Big/\dfrac{d\ce{^{15}N_p}}{\ce{^{14}N_s}}
+\end{equation}
+During a reaction which fractionates nitrogen isotopes,  $\delta\ce{^{15}N}$ values of each for the two ``pools,'' i.e., the growing product pool and the dwindling substrate pool, will deviate from the initial substrate value ($\delta\ce{^{15}N_{s(0)}}$) as a function of $\varepsilon$ and $f$, the fraction of substrate remaining compared to the initial value:
+\begin{align}
+    \delta\ce{^{15}N_s}&=\delta\ce{^{15}N_{s(0)}}-\varepsilon\ln{f}\label{d15ns}\\
+    \delta\ce{^{15}N_p}&=\delta\ce{^{15}N_{s(0)}}+\varepsilon\Big(\frac{f\ln{f}}{1-f}\Big)\label{d15np}
+\end{align}
+Since $\varepsilon$ is negative, $\delta\ce{^{15}N}$ will be lower in the product pool (organic nitrogen) and higher in the substrate pool (dissolved \ce{NO3-}), but not by the same amount.
+
+\section{Isotope Fractionation}
+\newcommand{\dN}{\delta\isotope[15]{N}}
+\newcommand{\eps}{\varepsilon}
+Nitrogen has two stable isotopes: \isotope[14]{N} and \isotope[15]{N}. Isotopes form the same compounds and participate in the same reactions; both are thus present in any nitrogenous sample. However, many reactions preferentially consume certain isotopes. For some reaction involving N, \ce{K_{14}} and \ce{K_{15}} represent the rate constants for the reactions involving only the respective isotope. The degree to which such a reaction distinguishes between isotopes is given by the isotopic fractionation factor $\alpha$:
+\begin{gather}
+    \alpha = \ce{K_{15}/K_{14}}\label{alpha}\\
+    \eps = \alpha - 1\label{epsilon}
+\end{gather}
+Most\footnote{The only significant biological reaction which does not fractionate N isotopes is Nitrification, the original source of fixed N forms to the ocean cycle} biological reactions preferentially consume lighter isotopes; thus $\alpha<1$ and $\eps$ is negative. For incomplete reactions,\footnote{Theoretically, all reactions are incomplete, as there is always some reverse reaction. For practical calculations, only systems with measurable pools of substrate and product are considered incomplete.} isotopes are partitioned into pools of substrate (reactant) and product, whose isotope ratios may differ. These variations provide information about the chemical circumstances in which a sample formed, and the degree of completion for the relevant reaction. If we let $R$ indicate the  isotope ratio \isotope[15]{N}/\isotope[14]{N} with atmospheric \ce{N2} serving as a reference:
+\begin{equation}
+    R_{atm} \approx.003663\label{R}
+\end{equation} then the geochemical tracer used to measure N isotope ratios is $\dN$:
+\begin{equation}
+   \dN=\frac{R}{R_{atm}}-1\label{d15N}
+\end{equation}
+$\delta\ce{^{15}N}$ and $\eps$ are expressed in parts per thousand (\unit{\permil}). 
+
+\section{Motivation}
+Atlantic Ocean overturning has significantly slowed during the 20th century, evidenced by the observation that the site of NADW formation is the only region of the Earth that is currently cooling.
